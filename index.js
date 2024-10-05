@@ -154,7 +154,7 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '254740007567';
+            const dj = '255714595078';
             const dj2 = '254740007567';
             const dj3 = "254740007567";
             const luffy = '25490375710';
@@ -672,7 +672,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
             let msg = `╔════◇◇◇═════╗
-║ welcome to new(s) member(s)
+║ welcome home new(s) member(s)
 ║ *New(s) Member(s) :*
 `;
 
@@ -854,16 +854,13 @@ ${metadata.desc}\n\n> 𝐁𝐮𝐠𝐚𝐭𝐭𝐢 𝐁𝐲 𝐌𝐚𝐫𝐢𝐬
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `𝐁𝐮𝐠𝐚𝐭𝐭𝐢 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞  ⏳\n${readmore}
-    
-    𝗣𝗿𝗲𝗳𝗶𝘅 : [ ${prefixe} ]
-    𝗠𝗼𝗱𝗲 :${md} mode
-    𝗣𝗹𝘂𝗴𝗶𝗻𝘀 : 245
-    𝗥𝗮𝗺 : 𝟲𝟴/𝟭𝟯𝟮 𝗚𝗕
-    𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : 𝗟𝗶𝗻𝘂𝘅
-    𝗖𝗿𝗲𝗮𝘁𝗼𝗿 : 𝐌𝐚𝐫𝐢𝐬𝐞𝐥
-
-> 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐃𝐞𝐩𝐥𝐨𝐲𝐢𝐧𝐠 𝐁𝐮𝐠𝐚𝐭𝐭𝐢`;
+                let cmsg = `━━━━━❏
+┃❐𝙱𝚄𝙶𝙰𝚃𝚃𝙸 𝙼𝙳 
+┃❐𝚅𝙸𝚂𝙸𝙾𝙽 : 𝚅𝟻
+┃❐𝙼𝙾𝙳𝙴 :  [ ${mode} ]
+┃❐𝙿𝚁𝙴𝙵𝙸𝚇 :  [ ${prefixe} ]
+┃❐𝙲𝚁𝙴𝙰𝚃𝙾𝚁: 👑 𝙼𝙰𝚁𝙸𝚂𝙴𝙻
+┗━━━━━━━━━━━━━━━━━━━━❒`;
                     
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
